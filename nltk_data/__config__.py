@@ -9,9 +9,8 @@
 
 import os
 
-ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-
+import nltk_data
 # nltk requires env setup before first import
-NLTK_DATA = os.path.join(ROOT, 'nltk_data')
+NLTK_DATA = os.path.join(nltk_data.ROOT, 'nltk_data')
 assert os.path.exists(NLTK_DATA)
 os.environ['NLTK_DATA'] = NLTK_DATA
