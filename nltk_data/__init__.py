@@ -9,12 +9,13 @@
 
 import os
 
-__version__ = '0.1.0'
+# pylint:disable=wrong-import-position
+import nltk_data.__config__
+
+__version__ = '0.1.1'
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 
-# pylint:disable=wrong-import-position
-import nltk_data.__config__
 from nltk_data.corpora import *  # isort:skip
 from nltk_data.utils import pickler  # isort:skip
 from nltk_data.utils import load_pickle  # isort:skip
