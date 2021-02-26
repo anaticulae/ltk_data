@@ -10,6 +10,7 @@
 import os
 
 import nltk_data
+
 # nltk requires env setup before first import
 NLTK_DATA = os.path.join(nltk_data.ROOT, 'nltk_data')
 assert os.path.exists(NLTK_DATA)
