@@ -18,7 +18,7 @@ ROOT = os.path.abspath(os.path.dirname(__file__))
 with open(os.path.join(ROOT, 'README.md'), encoding='utf8') as fp:
     README = fp.read()
 
-with open(os.path.join(ROOT, 'nltkdata/__init__.py'), encoding='utf8') as fp:
+with open(os.path.join(ROOT, 'nltk_data/__init__.py'), encoding='utf8') as fp:
     VERSION = re.search(r'__version__ = \'(.*?)\'', fp.read()).group(1)
 
 with open(os.path.join(ROOT, "requirements.txt"), encoding='utf8') as fp:
@@ -33,9 +33,9 @@ if __name__ == "__main__":
         description='data data data',
         install_requires=REQUIRES,
         long_description=README,
-        name='nltkdata',
+        name='nltk_data',
         platforms='any',
-        url='https://dev.package.checkitweg.de/nltkdata',
+        url='https://dev.package.checkitweg.de/nltk_data',
         version=VERSION,
         zip_safe=False,  # create 'zip'-file if True. Don't do it!
         classifiers=[
@@ -43,6 +43,6 @@ if __name__ == "__main__":
             'Programming Language :: Python :: 3.8',
         ],
         packages=[
-            'nltkdata',
+            'nltk_data',
         ],
     )
