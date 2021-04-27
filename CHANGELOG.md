@@ -2,6 +2,12 @@
 
 Every noteable change is logged here.
 
+## v0.1.3
+
+### Fix
+
+* ensure that path is configured correctly (6de1d96257e1)
+
 ## v0.1.2
 
 ## v0.1.1
