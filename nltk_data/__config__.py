@@ -9,9 +9,12 @@
 
 import os
 
+import nltk.data
+
 import nltk_data
 
 # nltk requires env setup before first import
 NLTK_DATA = os.path.join(nltk_data.ROOT, 'nltk_data')
 assert os.path.exists(NLTK_DATA)
-os.environ['NLTK_DATA'] = NLTK_DATA
+nltk.data.path.insert(0, NLTK_DATA)  # ENSURE THAT PATH IS AVAILABLE
+os.environ['NLTK_DATA'] = NLTK_DATA  # TODO: IMPORT ORDER DEPEDEND
