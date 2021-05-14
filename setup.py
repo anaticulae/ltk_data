@@ -47,3 +47,5 @@ if __name__ == "__main__":
             'nltk_data',
         ],
     )
+    import nltk_data.compile
+    nltk_data.compile.compile_names()
