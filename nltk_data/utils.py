@@ -14,9 +14,11 @@ import utila
 
 
 def pickler(source: str):
+    utila.log(f'load: {source}')
     loaded = load_dict(source, lower=True)
     dumped = pickle.dumps(loaded, protocol=4)
     outpath = picklepath(source)
+    utila.log(f'dump: {outpath}')
     utila.file_replace_binary(outpath, dumped)
 
 

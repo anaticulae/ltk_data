@@ -17,4 +17,5 @@ def compile_names():
 
 
 if __name__ == "__main__":
+    print('compile')
     compile_names()
