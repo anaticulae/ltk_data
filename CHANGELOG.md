@@ -2,6 +2,12 @@
 
 Every noteable change is logged here.
 
+## v0.2.0
+
+### Feature
+
+* add list of family names (f0ddf033fb07)
+
 ## v0.1.3
 
 ### Fix
