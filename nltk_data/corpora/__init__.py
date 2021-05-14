@@ -16,5 +16,6 @@ CORPORA = os.path.join(nltk_data.ROOT, 'nltk_data/corpora')
 NAMES = os.path.join(CORPORA, 'names')
 NAMES_MALE = os.path.join(NAMES, 'male')
 NAMES_FEMALE = os.path.join(NAMES, 'female')
+NAMES_FAMILY = os.path.join(NAMES, 'family')
 
 STOPWORDS = os.path.join(CORPORA, 'stopwords')

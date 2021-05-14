@@ -11,8 +11,9 @@ import nltk_data
 
 
 def compile_names():
-    nltk_data.pickler(nltk_data.NAMES_MALE)
+    nltk_data.pickler(nltk_data.NAMES_FAMILY)
     nltk_data.pickler(nltk_data.NAMES_FEMALE)
+    nltk_data.pickler(nltk_data.NAMES_MALE)
 
 
 if __name__ == "__main__":

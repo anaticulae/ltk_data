@@ -9,5 +9,6 @@
 
 import nltk_data
 
-NAME_MALE = nltk_data.load_pickle(nltk_data.NAMES_MALE)
+NAME_FAMILY = nltk_data.load_pickle(nltk_data.NAMES_FAMILY)
 NAME_FEMALE = nltk_data.load_pickle(nltk_data.NAMES_FEMALE)
+NAME_MALE = nltk_data.load_pickle(nltk_data.NAMES_MALE)
