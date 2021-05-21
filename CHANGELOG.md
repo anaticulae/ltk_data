@@ -2,6 +2,12 @@
 
 Every noteable change is logged here.
 
+## v0.2.1
+
+### Feature
+
+* extend family list (7ab07182fbf4)
+
 ## v0.2.0
 
 ### Feature
