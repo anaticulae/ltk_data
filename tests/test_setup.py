@@ -15,3 +15,10 @@ import nltk_data
 def test_nltk_config():
     assert os.path.exists(os.environ['NLTK_DATA'])
     assert os.path.exists(nltk_data.STOPWORDS)
+
+
+def test_ntlk_import():
+    """Ensure that first source of nltk_data lookup is set by nltk_data."""
+    import nltk
+    firstpath = nltk.data.path[0]
+    assert firstpath.endswith('nltk_data')
