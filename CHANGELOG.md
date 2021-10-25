@@ -2,6 +2,12 @@
 
 Every noteable change is logged here.
 
+## v0.2.3
+
+### Feature
+
+* add option to extend nltk data path (5bf950604ef2)
+
 ## v0.2.2
 
 ### Fix
