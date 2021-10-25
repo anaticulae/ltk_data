@@ -2,6 +2,12 @@
 
 Every noteable change is logged here.
 
+## v0.2.2
+
+### Fix
+
+* do not load nltk to reduce import time (2add0f81303f)
+
 ## v0.2.1
 
 ### Feature
