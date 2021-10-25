@@ -9,9 +9,14 @@
 
 import os
 
-import nltk_data
+import utila
 
-# nltk requires env setup before first import
-NLTK_DATA = os.path.join(nltk_data.ROOT, 'nltk_data')
-assert os.path.exists(NLTK_DATA)
-os.environ['NLTK_DATA'] = NLTK_DATA  # TODO: IMPORT ORDER DEPEDEND
+
+def add_nltk_path(path: str):
+    utila.exists_assert(path)
+    seperator = os.pathsep
+    before = os.environ.get('NLTK_DATA', '')
+    if before:
+        before += seperator
+    current = f'{before}{path}'
+    os.environ['NLTK_DATA'] = current
