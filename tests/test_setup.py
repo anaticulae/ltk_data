@@ -10,6 +10,7 @@
 import os
 
 import nltk_data
+import nltk_data.lookup
 
 
 def test_nltk_config():
@@ -22,3 +23,7 @@ def test_ntlk_import():
     import nltk
     firstpath = nltk.data.path[0]
     assert firstpath.endswith('nltk_data')
+
+
+def test_ntlk_lookup():
+    assert len(nltk_data.lookup.NAME_FAMILY) >= 18
