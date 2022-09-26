@@ -2,6 +2,12 @@
 
 Every noteable change is logged here.
 
+## v0.2.5 (2022-09-26)
+
+### Fix
+
+* add missing resources (7a17127ef96f)
+
 ## v0.2.4 (2022-09-26)
 
 ### Documentation
