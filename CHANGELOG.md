@@ -2,6 +2,17 @@
 
 Every noteable change is logged here.
 
+## v0.2.4 (2022-09-26)
+
+### Documentation
+
+* happy New Year! (90efd039a609)
+
+### Chore
+
+* add Jenkinsfile (59d963239768)
+* upgrade requirements.txt (d92795e256ba)
+
 ## v0.2.3
 
 ### Feature
