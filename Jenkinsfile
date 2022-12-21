@@ -16,11 +16,11 @@ pipeline{
         stage('test'){
             failFast true
             parallel{
-                stage('doc'){
-                    steps{
-                        script{baw.doctest()}
-                    }
-                }
+                // stage('doc'){
+                //     steps{
+                //         script{baw.doctest()}
+                //     }
+                // }
                 stage('fast'){
                     steps{
                         script{baw.fast()}
