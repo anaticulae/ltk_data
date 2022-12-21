@@ -2,6 +2,20 @@
 
 Every noteable change is logged here.
 
+## v0.2.6 (2022-12-21)
+
+### Chore
+
+* add missing packages (edbdd46b3207)
+* there a no doc-tests (f6d47cebec89)
+* ensure that nltk_data is installed (6bc1f47ecc2b)
+* increase utilatest version (57a65c43fd6e)
+* upgrade Jenkinsfile (796a8130a0fd)
+* remove default behavior (a7eecf6262e8)
+* use quick install (402860ea9d04)
+* upgrade requirements.txt (1346e2ada72a)
+* upgrade pipeline (2f690c5361ea)
+
 ## v0.2.5 (2022-09-26)
 
 ### Fix
