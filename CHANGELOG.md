@@ -2,6 +2,18 @@
 
 Every noteable change is logged here.
 
+## v0.3.0 (2022-12-30)
+
+### Feature
+
+* always log compile start (09755392021f)
+
+### Chore
+
+* use pre-release container (330a8f2f79d8)
+* upgrade Jenkinsfile (e510fbdb52ae)
+* upgrade pipe library (7feb43893cbb)
+
 ## v0.2.6 (2022-12-21)
 
 ### Chore
