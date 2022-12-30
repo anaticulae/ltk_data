@@ -7,15 +7,17 @@
 # be prosecuted under federal law. Its content is company confidential.
 # =============================================================================
 
+import utila
+
 import nltk_data
 
 
 def compile_names():
+    utila.log('compile names')
     nltk_data.pickler(nltk_data.NAMES_FAMILY)
     nltk_data.pickler(nltk_data.NAMES_FEMALE)
     nltk_data.pickler(nltk_data.NAMES_MALE)
 
 
 if __name__ == "__main__":
-    print('compile')
     compile_names()
