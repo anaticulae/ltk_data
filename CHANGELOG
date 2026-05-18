@@ -1,88 +1,219 @@
-# Changelog
+# CHANGELOG
 
-Every noteable change is logged here.
+
+## v1.0.0 (2026-05-18)
+
+### Chores
+
+- **github**: Add .github
+  ([`25959a7`](https://github.com/anaticulae/ltk_data/commit/25959a7265d30b5c91873a2927b1ecdad9566286))
+
+- **packages**: Adjust package names
+  ([`8a03d56`](https://github.com/anaticulae/ltk_data/commit/8a03d564dd4b31b01442eb0d15e818d567ef95cf))
+
+- **project**: Rename project
+  ([`84c427e`](https://github.com/anaticulae/ltk_data/commit/84c427e238260e6b2f314a4d6825db330d761e8c))
+
+- **project**: Use modern approach
+  ([`ba51f1c`](https://github.com/anaticulae/ltk_data/commit/ba51f1c8ff1587fc415ff759fd3784dac3ffef1a))
+
+- **requirements**: Upgrade nltk
+  ([`0bb7c6c`](https://github.com/anaticulae/ltk_data/commit/0bb7c6c2720ec8fff8da28883f5b22f15557755d))
+
+- **test**: Skip setup
+  ([`8d229d7`](https://github.com/anaticulae/ltk_data/commit/8d229d7113ad24b14075c8fbd0c9b27284ac07f8))
+
 
 ## v0.3.0 (2022-12-30)
 
-### Feature
+### Chores
 
-* always log compile start (09755392021f)
+- **Jenkins**: Upgrade Jenkinsfile
+  ([`e510fbd`](https://github.com/anaticulae/ltk_data/commit/e510fbdb52aed9f5fb19a5ac79654f46add15af1))
 
-### Chore
+- **Jenkins**: Upgrade pipe library
+  ([`7feb438`](https://github.com/anaticulae/ltk_data/commit/7feb43893cbbdce4a91855ceadc0fb9e707ec756))
 
-* use pre-release container (330a8f2f79d8)
-* upgrade Jenkinsfile (e510fbdb52ae)
-* upgrade pipe library (7feb43893cbb)
+- **Jenkins**: Use pre-release container
+  ([`330a8f2`](https://github.com/anaticulae/ltk_data/commit/330a8f2f79d82052614a8ae5da654ab3b61d8b53))
+
+### Features
+
+- **compile**: Always log compile start
+  ([`0975539`](https://github.com/anaticulae/ltk_data/commit/09755392021fa093f809f5afa4bc7896e938ba23))
+
 
 ## v0.2.6 (2022-12-21)
 
-### Chore
+### Chores
 
-* add missing packages (edbdd46b3207)
-* there a no doc-tests (f6d47cebec89)
-* ensure that ltk_data is installed (6bc1f47ecc2b)
-* increase utilotest version (57a65c43fd6e)
-* upgrade Jenkinsfile (796a8130a0fd)
-* remove default behavior (a7eecf6262e8)
-* use quick install (402860ea9d04)
-* upgrade requirements.txt (1346e2ada72a)
-* upgrade pipeline (2f690c5361ea)
+- **baw**: Remove default behavior
+  ([`a7eecf6`](https://github.com/anaticulae/ltk_data/commit/a7eecf6262e8d0cba98fdbf707584eb8b8967623))
+
+- **Jenkins**: There a no doc-tests
+  ([`f6d47ce`](https://github.com/anaticulae/ltk_data/commit/f6d47cebec8938a72ce8d38025d539ce20c85bda))
+
+- **Jenkins**: Upgrade Jenkinsfile
+  ([`796a813`](https://github.com/anaticulae/ltk_data/commit/796a8130a0fdc3afa33bb57c723ff51a493f7b8f))
+
+- **Jenkins**: Upgrade pipeline
+  ([`2f690c5`](https://github.com/anaticulae/ltk_data/commit/2f690c5361eaba2c6d997d8675fe2669d67a04a0))
+
+- **requirements**: Increase utilatest version
+  ([`57a65c4`](https://github.com/anaticulae/ltk_data/commit/57a65c43fd6e04a951332b538ea463fc227bc9bb))
+
+- **requirements**: Upgrade requirements.txt
+  ([`1346e2a`](https://github.com/anaticulae/ltk_data/commit/1346e2ada72ad12815f0c5621db8dc587a137815))
+
+- **setup**: Add missing packages
+  ([`edbdd46`](https://github.com/anaticulae/ltk_data/commit/edbdd46b3207be59fa1640558e61ba7cc6ad6cde))
+
+- **setup**: Use quick install
+  ([`402860e`](https://github.com/anaticulae/ltk_data/commit/402860ea9d04a6ca9c5c233a0feb8c1cc8bab02f))
+
+- **test**: Ensure that nltk_data is installed
+  ([`6bc1f47`](https://github.com/anaticulae/ltk_data/commit/6bc1f47ecc2b3a6db9d3007c8b41cf80e24433ca))
+
 
 ## v0.2.5 (2022-09-26)
 
-### Fix
+### Bug Fixes
 
-* add missing resources (7a17127ef96f)
+- **manifest**: Add missing resources
+  ([`7a17127`](https://github.com/anaticulae/ltk_data/commit/7a17127ef96ffea87fa9da68ed8167604cfc81b5))
+
 
 ## v0.2.4 (2022-09-26)
 
+### Chores
+
+- **ci**: Add Jenkinsfile
+  ([`59d9632`](https://github.com/anaticulae/ltk_data/commit/59d963239768acaf99d7221721c959209812f98d))
+
+- **requirements**: Upgrade requirements.txt
+  ([`d92795e`](https://github.com/anaticulae/ltk_data/commit/d92795e256ba39d4393179b4aa93c3965b4f5634))
+
+### Code Style
+
+- **changelog**: Adjust to releaser
+  ([`7e5df68`](https://github.com/anaticulae/ltk_data/commit/7e5df68ed708850e396c3199e5e8fa39e017c3e2))
+
 ### Documentation
 
-* happy New Year! (90efd039a609)
+- **copyright**: Happy New Year!
+  ([`90efd03`](https://github.com/anaticulae/ltk_data/commit/90efd039a609d247e84f41acf91a8d601572f05b))
 
-### Chore
 
-* add Jenkinsfile (59d963239768)
-* upgrade requirements.txt (d92795e256ba)
+## v0.2.3 (2021-10-25)
 
-## v0.2.3
+### Features
 
-### Feature
+- **path**: Add option to extend nltk data path
+  ([`5bf9506`](https://github.com/anaticulae/ltk_data/commit/5bf950604ef21650923fcef7fef4d03bc9427832))
 
-* add option to extend nltk data path (5bf950604ef2)
+### Testing
 
-## v0.2.2
+- **setup**: Ensure to import lookup correctly
+  ([`6e0a029`](https://github.com/anaticulae/ltk_data/commit/6e0a02938b45ad4880452760a441e7370754dfe7))
 
-### Fix
 
-* do not load nltk to reduce import time (2add0f81303f)
+## v0.2.2 (2021-10-25)
 
-## v0.2.1
+### Bug Fixes
 
-### Feature
+- **config**: Do not load nltk to reduce import time
+  ([`2add0f8`](https://github.com/anaticulae/ltk_data/commit/2add0f81303ff47bc46f126647ffe011953b6932))
 
-* extend family list (7ab07182fbf4)
+### Chores
 
-## v0.2.0
+- **config**: Move project config
+  ([`f9c7ddb`](https://github.com/anaticulae/ltk_data/commit/f9c7ddbfbdee0116cee139f03dbf8c07d8959f0c))
 
-### Feature
+- **requirements**: Upgrade requirements.txt
+  ([`82ea67f`](https://github.com/anaticulae/ltk_data/commit/82ea67f75fdadac833fbb392ab8b33ef888152e8))
 
-* add list of family names (f0ddf033fb07)
 
-## v0.1.3
+## v0.2.1 (2021-05-21)
 
-### Fix
+### Chores
 
-* ensure that path is configured correctly (6de1d96257e1)
+- **requirements**: Upgrade requirements.txt
+  ([`8d0012a`](https://github.com/anaticulae/ltk_data/commit/8d0012a15fd169a44fc16663b8ecf204ff577799))
 
-## v0.1.2
+### Features
 
-## v0.1.1
+- **family**: Extend family list
+  ([`7ab0718`](https://github.com/anaticulae/ltk_data/commit/7ab07182fbf432244985b3323784a8736aa07bb0))
 
-## v0.1.0
 
-### Feature
+## v0.2.0 (2021-05-14)
 
-* move project from german package (38f2693bfc92)
+### Chores
 
-## v0.0.0 Initial release
+- **setup**: Compile dicts after installing
+  ([`3a9b19f`](https://github.com/anaticulae/ltk_data/commit/3a9b19f6695d802a56d37aa24b2df28abeed802c))
+
+- **setup**: Do not commit pickles
+  ([`7252080`](https://github.com/anaticulae/ltk_data/commit/7252080684da836a0e9815e8574a1a6f1c2f287f))
+
+### Features
+
+- **corpora**: Add list of family names
+  ([`f0ddf03`](https://github.com/anaticulae/ltk_data/commit/f0ddf033fb07784534cd46ec8462a1023961f8e0))
+
+
+## v0.1.3 (2021-04-27)
+
+### Bug Fixes
+
+- **import**: Ensure that path is configured correctly
+  ([`6de1d96`](https://github.com/anaticulae/ltk_data/commit/6de1d96257e1a7bd2498b584e256aa6f35e87f83))
+
+### Chores
+
+- **requirements**: Add missing requirement
+  ([`96f24cf`](https://github.com/anaticulae/ltk_data/commit/96f24cfdd83a96f690fe2d20fc1a4080f39802f7))
+
+### Code Style
+
+- **format**: Format code
+  ([`8f25f90`](https://github.com/anaticulae/ltk_data/commit/8f25f90b5ded431fafaac1acb9c994651d8e727f))
+
+
+## v0.1.2 (2021-02-27)
+
+### Chores
+
+- **imports**: Fix project setup
+  ([`c7e2e8f`](https://github.com/anaticulae/ltk_data/commit/c7e2e8f1f9d38307e6d72120d093b11d8e301d96))
+
+
+## v0.1.1 (2021-02-27)
+
+### Chores
+
+- **setup**: Copy required data
+  ([`751afdc`](https://github.com/anaticulae/ltk_data/commit/751afdc32cc32960593e12ae3c93b8d9f70ae3fa))
+
+
+## v0.1.0 (2021-02-27)
+
+### Chores
+
+- **requirements**: Add utila
+  ([`5ce6f60`](https://github.com/anaticulae/ltk_data/commit/5ce6f600eab6eb8af2d53a66db505144f95f49fb))
+
+### Features
+
+- **nltk**: Move project from german package
+  ([`38f2693`](https://github.com/anaticulae/ltk_data/commit/38f2693bfc92540dd23ae7ad553954d28d736c1f))
+
+### Testing
+
+- **setup**: Add test to verify config mechanism
+  ([`62928c9`](https://github.com/anaticulae/ltk_data/commit/62928c98acdc6f6af935beec049b5487b0974257))
+
+
+## v0.0.0 (2021-02-26)
+
+- Initial Release
