@@ -1,0 +1,92 @@
+[build-system]
+requires = [
+    "setuptools>=82.0.1",
+    "wheel>=0.47.0",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ltk_data"
+version = "0.3.0"
+description = ""
+requires-python = ">=3.12"
+authors = [
+    { name = "Helmut Konrad Schewe", email = "helmutus@outlook.com" },
+]
+dependencies = [
+    "utilo>=2.107.4,<3.0.0",
+    "nltk>=3.7.0,<4.0.0",
+]
+keywords = []
+classifiers = [
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+]
+license = "MIT"
+license-files = [
+    "LICENSE",
+]
+
+[project.readme]
+file = "README"
+content-type = "text/markdown"
+
+[project.optional-dependencies]
+dev = [
+    "utilotest>=1.0.1,<2.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/anaticulae/ltk_data"
+Repository = "https://github.com/anaticulae/ltk_data"
+
+[tool.semantic_release]
+version_toml = [
+    "pyproject.toml:project.version",
+]
+
+[tool.semantic_release.changelog]
+mode = "init"
+output_format = "md"
+
+[tool.semantic_release.changelog.default_templates]
+changelog_file = "CHANGELOG"
+
+[tool.semantic_release.commit_parser_options]
+patch_tags = [
+    "fix",
+    "perf",
+    "build",
+    "chore",
+    "ci",
+    "docs",
+    "style",
+    "refactor",
+    "test",
+    "deps",
+]
+
+[tool.setuptools.packages.find]
+where = [
+    ".",
+]
+include = [
+    "ltk_data",
+    "ltk_data.chunkers.maxent_ne_chunker",
+    "ltk_data.chunkers.maxent_ne_chunker.PY3",
+    "ltk_data.corpora",
+    "ltk_data.corpora.crubadan",
+    "ltk_data.corpora.names",
+    "ltk_data.corpora.stopwords",
+    "ltk_data.corpora.words",
+    "ltk_data.misc.perluniprops",
+    "ltk_data.taggers.averaged_perceptron_tagger",
+    "ltk_data.taggers.maxent_treebank_pos_tagger",
+    "ltk_data.taggers.maxent_treebank_pos_tagger.PY3",
+    "ltk_data.tokenizers.punkt",
+    "ltk_data.tokenizers.punkt.PY3",
+]
+exclude = [
+    "tests*",
+]
