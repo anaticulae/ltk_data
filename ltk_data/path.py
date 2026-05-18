@@ -9,11 +9,11 @@
 
 import os
 
-import utila
+import utilo
 
 
 def add_nltk_path(path: str):
-    utila.exists_assert(path)
+    utilo.exists_assert(path)
     seperator = os.pathsep
     before = os.environ.get('ltk_data', '')
     if before:

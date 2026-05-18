@@ -7,13 +7,13 @@
 # be prosecuted under federal law. Its content is company confidential.
 # =============================================================================
 
-import utila
+import utilo
 
 import ltk_data
 
 
 def compile_names():
-    utila.log('compile names')
+    utilo.log('compile names')
     ltk_data.pickler(ltk_data.NAMES_FAMILY)
     ltk_data.pickler(ltk_data.NAMES_FEMALE)
     ltk_data.pickler(ltk_data.NAMES_MALE)

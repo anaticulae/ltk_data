@@ -7,8 +7,8 @@
 # be prosecuted under federal law. Its content is company confidential.
 # =============================================================================
 
-import utila
+import utilo
 
 pytest_plugins = ['pytester', 'xdist']  # pylint: disable=invalid-name
 
-utila.run('python setup.py build', cwd=utila.baw_root(__file__))
+utilo.run('python setup.py build', cwd=utilo.baw_root(__file__))
