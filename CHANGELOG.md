@@ -20,7 +20,7 @@ Every noteable change is logged here.
 
 * add missing packages (edbdd46b3207)
 * there a no doc-tests (f6d47cebec89)
-* ensure that nltk_data is installed (6bc1f47ecc2b)
+* ensure that ltk_data is installed (6bc1f47ecc2b)
 * increase utilatest version (57a65c43fd6e)
 * upgrade Jenkinsfile (796a8130a0fd)
 * remove default behavior (a7eecf6262e8)
@@ -86,4 +86,3 @@ Every noteable change is logged here.
 * move project from german package (38f2693bfc92)
 
 ## v0.0.0 Initial release
-

@@ -1,4 +1,0 @@
-de	deu	German
-en	eng	English
-es	spa	Spanish
-fr	fra	French

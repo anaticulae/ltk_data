@@ -7,8 +7,8 @@
 # be prosecuted under federal law. Its content is company confidential.
 # =============================================================================
 
-graft nltk_data/chunkers
-graft nltk_data/corpora
-graft nltk_data/misc
-graft nltk_data/taggers
-graft nltk_data/tokenizers
+graft ltk_data/chunkers
+graft ltk_data/corpora
+graft ltk_data/misc
+graft ltk_data/taggers
+graft ltk_data/tokenizers
