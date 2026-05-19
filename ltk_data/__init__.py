@@ -19,8 +19,10 @@ from ltk_data.corpora import *  # isort:skip
 from ltk_data.utils import pickler  # isort:skip
 from ltk_data.utils import load_pickle  # isort:skip
 from ltk_data.path import add_nltk_path  # isort:skip
+from ltk_data.compile import compile_names
 
 # nltk requires env setup before first import
 ltk_data = os.path.join(ROOT, 'ltk_data')
 
 add_nltk_path(ltk_data)
+compile_names()
