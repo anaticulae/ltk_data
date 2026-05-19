@@ -1,6 +1,20 @@
 # CHANGELOG
 
 
+## v1.0.1 (2026-05-19)
+
+### Bug Fixes
+
+- **make**: Remove unused compile
+  ([`39022d9`](https://github.com/anaticulae/ltk_data/commit/39022d96f5b5e1326102496fe8fe23d14df4c959))
+
+- **setup**: Compile on setup
+  ([`80e533b`](https://github.com/anaticulae/ltk_data/commit/80e533bb7c4ae4141a4987d67422bc36e9303d3b))
+
+- **test**: Adjust tests
+  ([`b449d07`](https://github.com/anaticulae/ltk_data/commit/b449d072299243ee1b904c239f836953b6707cf1))
+
+
 ## v1.0.0 (2026-05-18)
 
 ### Chores
