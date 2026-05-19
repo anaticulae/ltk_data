@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v1.0.2 (2026-05-19)
+
+### Chores
+
+- **setup**: Add missing license file
+  ([`e86adff`](https://github.com/anaticulae/ltk_data/commit/e86adffe0508c74640eaef8d6432deeb177adf84))
+
+
 ## v1.0.1 (2026-05-19)
 
 ### Bug Fixes
