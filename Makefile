@@ -14,19 +14,29 @@ docker-upload:
 	docker push $(IMAGE_NAME)
 
 docker-doctest: docker-build
-	docker run -v $(CURDIR):/var/workdir $(IMAGE_NAME) "baw test docs"
+	docker run -v $(CURDIR):/var/workdir\
+		$(IMAGE_NAME)\
+		"baw test docs"
 
 docker-fasttest: docker-build
-	docker run -v $(CURDIR):/var/workdir $(IMAGE_NAME) "baw test fast"
+	docker run -v $(CURDIR):/var/workdir\
+		$(IMAGE_NAME)\
+		"baw test fast"
 
 docker-longtest: docker-build
-	docker run -v $(CURDIR):/var/workdir $(IMAGE_NAME) "baw test long"
+	docker run -v $(CURDIR):/var/workdir\
+		$(IMAGE_NAME)\
+		"baw test long"
 
 docker-alltest: docker-build
-	docker run -v $(CURDIR):/var/workdir $(IMAGE_NAME) "baw test all"
+	docker run -v $(CURDIR):/var/workdir\
+		$(IMAGE_NAME)\
+		"baw test all"
 
 docker-lint: docker-build
-	docker run -v $(CURDIR):/var/workdir $(IMAGE_NAME) "baw lint all"
+	docker run -v $(CURDIR):/var/workdir\
+		$(IMAGE_NAME)\
+		"baw lint all"
 
 docker-release: docker-build
 	docker run -v $(CURDIR):/var/workdir\
