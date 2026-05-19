@@ -16,27 +16,27 @@ docker-upload:
 docker-doctest: docker-build
 	docker run -v $(CURDIR):/var/workdir\
 		$(IMAGE_NAME)\
-		"python -m ltk_data.compile && baw test docs"
+		"baw test docs"
 
 docker-fasttest: docker-build
 	docker run -v $(CURDIR):/var/workdir\
 		$(IMAGE_NAME)\
-		"python -m ltk_data.compile && baw test fast"
+		"baw test fast"
 
 docker-longtest: docker-build
 	docker run -v $(CURDIR):/var/workdir\
 		$(IMAGE_NAME)\
-		"python -m ltk_data.compile && baw test long"
+		"baw test long"
 
 docker-alltest: docker-build
 	docker run -v $(CURDIR):/var/workdir\
 		$(IMAGE_NAME)\
-		"python -m ltk_data.compile && baw test all"
+		"baw test all"
 
 docker-lint: docker-build
 	docker run -v $(CURDIR):/var/workdir\
 		$(IMAGE_NAME)\
-		"python -m ltk_data.compile && baw lint all"
+		"baw lint all"
 
 docker-release: docker-build
 	docker run -v $(CURDIR):/var/workdir\
