@@ -1,6 +1,27 @@
 # CHANGELOG
 
 
+## v1.1.0 (2026-06-24)
+
+### Chores
+
+- **deps**: Bump actions/checkout from 6 to 7
+  ([`8c7e19e`](https://github.com/anaticulae/ltk_data/commit/8c7e19e7619165dc0990f54a9b8227f7d23f0ae5))
+
+- **requirements**: Upgrade pyproject.toml
+  ([`243a6eb`](https://github.com/anaticulae/ltk_data/commit/243a6eb1f6f51fd969ce6ba2815de1346b23d706))
+
+### Features
+
+- **compile**: Add parameter to skip compile process
+  ([`a234724`](https://github.com/anaticulae/ltk_data/commit/a23472410038f9aff30d0a91f923be8eb47ea693))
+
+### Refactoring
+
+- **utilo**: Use utilo code
+  ([`2c6e24e`](https://github.com/anaticulae/ltk_data/commit/2c6e24e64f3b5e3d1c85c78bfe511af30605b023))
+
+
 ## v1.0.2 (2026-05-19)
 
 ### Chores
