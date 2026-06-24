@@ -12,12 +12,25 @@ import utilo
 import ltk_data
 
 
-def compile_names():
-    utilo.log('compile names')
-    ltk_data.pickler(ltk_data.NAMES_FAMILY)
-    ltk_data.pickler(ltk_data.NAMES_FEMALE)
-    ltk_data.pickler(ltk_data.NAMES_MALE)
+def compile_names(update: bool = False):
+    if todo(update=update):
+        utilo.log('compile names')
+    else:
+        utilo.debug('nothing to compile')
+    for path in todo(update=update):
+        ltk_data.pickler(path)
 
 
-if __name__ == "__main__":
-    compile_names()
+def todo(update: bool = False):
+    """\
+    >>> next(todo(update=True))
+    '.../ltk_data/corpora/names/family'
+    """
+    for item in (
+            ltk_data.NAMES_FAMILY,
+            ltk_data.NAMES_FEMALE,
+            ltk_data.NAMES_MALE,
+    ):
+        if not update and utilo.exists(ltk_data.picklepath(item)):
+            continue
+        yield item

@@ -18,6 +18,7 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 from ltk_data.corpora import *  # isort:skip
 from ltk_data.utils import pickler  # isort:skip
 from ltk_data.utils import load_pickle  # isort:skip
+from ltk_data.utils import picklepath  # isort:skip
 from ltk_data.path import add_nltk_path  # isort:skip
 from ltk_data.compile import compile_names
 
@@ -25,4 +26,4 @@ from ltk_data.compile import compile_names
 ltk_data = os.path.join(ROOT, 'ltk_data')
 
 add_nltk_path(ltk_data)
-compile_names()
+compile_names(update=False)

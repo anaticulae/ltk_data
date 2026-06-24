@@ -33,12 +33,12 @@ def picklepath(path: str):
     directory, name = os.path.split(path)
     if not name.endswith('pickle'):
         name = f'{name}.pickle'
-        path = os.path.join(directory, name)
+        path = utilo.join(directory, name)
     return path
 
 
 def load_dict(path, lower: bool = False) -> set:
-    assert os.path.exists(path), str(path)
+    assert utilo.exists(path), str(path)
     loaded = utilo.file_read(path).splitlines()
     result = set(item.lower() if lower else item for item in loaded)
     return result
