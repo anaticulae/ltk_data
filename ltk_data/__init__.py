@@ -7,10 +7,10 @@
 # be prosecuted under federal law. Its content is company confidential.
 # =============================================================================
 
+import importlib.metadata
 import os
-from importlib.metadata import version as metaversion
 
-__version__ = metaversion('ltk_data')
+__version__ = importlib.metadata.version('ltk_data')
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 

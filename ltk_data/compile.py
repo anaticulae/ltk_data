@@ -14,7 +14,7 @@ import ltk_data
 
 def compile_names(update: bool = False):
     if todo(update=update):
-        utilo.log('compile names')
+        utilo.debug('compile names')
     else:
         utilo.debug('nothing to compile')
     for path in todo(update=update):
