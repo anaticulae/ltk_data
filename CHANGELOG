@@ -1,6 +1,30 @@
 # CHANGELOG
 
 
+## v1.1.1 (2026-08-01)
+
+### Bug Fixes
+
+- **compile**: Make message less verbose
+  ([`27d0378`](https://github.com/anaticulae/ltk_data/commit/27d0378537ea724cf2122ad1831c72ad9e71c813))
+
+### Chores
+
+- **make**: Do not release twice
+  ([`3488ea6`](https://github.com/anaticulae/ltk_data/commit/3488ea676498b7c209f686c018756cbb3ad03e5b))
+
+- **pyproject**: Release on every commit
+  ([`7e78939`](https://github.com/anaticulae/ltk_data/commit/7e7893915c68d55c0abb28831659bc99a6956bdd))
+
+- **requirements**: Upgrade pyproject.toml
+  ([`17441d9`](https://github.com/anaticulae/ltk_data/commit/17441d94f194ba24d8f5dab9ff18b861de4856b6))
+
+### Refactoring
+
+- **imports**: Organize imports
+  ([`e632be7`](https://github.com/anaticulae/ltk_data/commit/e632be7b38a7b403f4a47d4b8746d756c129906e))
+
+
 ## v1.1.0 (2026-06-24)
 
 ### Chores
