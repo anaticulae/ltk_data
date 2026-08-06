@@ -14,7 +14,7 @@ import ltk_data.lookup
 
 
 def test_nltk_config():
-    assert os.path.exists(os.environ['ltk_data'])
+    assert os.path.exists(os.environ['NLTK_DATA'])
     assert os.path.exists(ltk_data.STOPWORDS)
 
 
