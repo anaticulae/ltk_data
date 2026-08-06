@@ -1,6 +1,19 @@
 # CHANGELOG
 
 
+## v1.1.2 (2026-08-06)
+
+### Bug Fixes
+
+- **path**: Adjust os env var
+  ([`d3d3c03`](https://github.com/anaticulae/ltk_data/commit/d3d3c033e5297cf3f700a70ad138ec3e93910f4b))
+
+### Chores
+
+- **requirements**: Upgrade pyproject.toml
+  ([`688aa5c`](https://github.com/anaticulae/ltk_data/commit/688aa5c1a05a4adf460900bfc893084c27b4968c))
+
+
 ## v1.1.1 (2026-08-01)
 
 ### Bug Fixes
