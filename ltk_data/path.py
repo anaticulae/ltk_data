@@ -15,8 +15,8 @@ import utilo
 def add_nltk_path(path: str):
     utilo.exists_assert(path)
     seperator = os.pathsep
-    before = os.environ.get('ltk_data', '')
+    before = os.environ.get('NLTK_DATA', '')
     if before:
         before += seperator
     current = f'{before}{path}'
-    os.environ['ltk_data'] = current
+    os.environ['NLTK_DATA'] = current
