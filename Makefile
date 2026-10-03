@@ -15,41 +15,41 @@ docker-upload: docker-build
 
 docker-doctest: docker-build
 	docker run\
-		-v $(CURDIR):/var/workdir\
-		$(IMAGE_NAME)\
+		-v $(CURDIR):/var/workdir \
+		$(IMAGE_NAME) \
 		"baw test docs"
 
 docker-fasttest: docker-build
 	docker run\
-		-v $(CURDIR):/var/workdir\
-		$(IMAGE_NAME)\
+		-v $(CURDIR):/var/workdir \
+		$(IMAGE_NAME) \
 		"baw test fast"
 
 docker-longtest: docker-build
 	docker run\
-		-v $(CURDIR):/var/workdir\
-		$(IMAGE_NAME)\
+		-v $(CURDIR):/var/workdir \
+		$(IMAGE_NAME) \
 		"baw test long"
 
 docker-alltest: docker-build
 	docker run\
-		-v $(CURDIR):/var/workdir\
-		$(IMAGE_NAME)\
+		-v $(CURDIR):/var/workdir \
+		$(IMAGE_NAME) \
 		"baw test all"
 
 docker-lint: docker-build
 	docker run\
-		-v $(CURDIR):/var/workdir\
-		$(IMAGE_NAME)\
+		-v $(CURDIR):/var/workdir \
+		$(IMAGE_NAME) \
 		"baw lint all"
 
 docker-release: docker-build
 	@if git describe --exact-match --tags HEAD >/dev/null 2>&1; then\
-		echo "Current commit is already tagged. Skipping release.";\
+		echo "Current commit is already tagged. Skipping release."; \
 	else \
-		docker run\
-			-v $(CURDIR):/var/workdir\
-			-e GH_TOKEN\
-			$(IMAGE_NAME)\
-			"baw release --no_test --no_linter";\
+		docker run \
+			-v $(CURDIR):/var/workdir \
+			-e GH_TOKEN \
+			$(IMAGE_NAME) \
+			"baw release --no_test --no_linter"; \
 	fi
