@@ -17,7 +17,7 @@ __version__ = importlib.metadata.version('ltk_data')
 ROOT = os.path.abspath(utilo.join(os.path.dirname(__file__), '..'))
 
 # pylint:disable=wrong-import-position
-from ltk_data.corpora import *  # isort:skip
+from ltk_data.data.corpora import *  # isort:skip
 from ltk_data.utils import pickler  # isort:skip
 from ltk_data.utils import load_pickle  # isort:skip
 from ltk_data.utils import picklepath  # isort:skip

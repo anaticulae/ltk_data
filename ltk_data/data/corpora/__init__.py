@@ -11,7 +11,7 @@ import utilo
 
 import ltk_data
 
-CORPORA = utilo.join(ltk_data.ROOT, 'ltk_data/corpora')
+CORPORA = utilo.join(ltk_data.ROOT, 'ltk_data/data/corpora')
 
 NAMES = utilo.join(CORPORA, 'names')
 NAMES_MALE = utilo.join(NAMES, 'male')
