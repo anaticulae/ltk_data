@@ -10,7 +10,6 @@
 import os
 
 import ltk_data
-import ltk_data.lookup
 
 
 def test_nltk_config():
@@ -22,8 +21,8 @@ def test_ntlk_import():
     """Ensure that first source of ltk_data lookup is set by ltk_data."""
     import nltk
     firstpath = nltk.data.path[0]
-    assert firstpath.endswith('ltk_data')
+    assert firstpath.endswith('ltk_data/data')
 
 
 def test_ntlk_lookup():
-    assert len(ltk_data.lookup.NAME_FAMILY) >= 18
+    assert len(ltk_data.NAME_FAMILY) >= 18

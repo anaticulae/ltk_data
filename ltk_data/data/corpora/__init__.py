@@ -6,9 +6,3 @@
 # use or distribution is an offensive act against international law and may
 # be prosecuted under federal law. Its content is company confidential.
 # =============================================================================
-
-import ltk_data
-
-NAME_FAMILY = ltk_data.load_pickle(ltk_data.NAMES_FAMILY)
-NAME_FEMALE = ltk_data.load_pickle(ltk_data.NAMES_FEMALE)
-NAME_MALE = ltk_data.load_pickle(ltk_data.NAMES_MALE)

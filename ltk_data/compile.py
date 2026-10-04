@@ -24,7 +24,7 @@ def compile_names(update: bool = False):
 def todo(update: bool = False):
     """\
     >>> next(todo(update=True))
-    '.../ltk_data/corpora/names/family'
+    '.../ltk_data/data/corpora/names/family'
     """
     for item in (
             ltk_data.NAMES_FAMILY,

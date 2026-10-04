@@ -8,15 +8,36 @@
 # =============================================================================
 
 import os
+import pathlib
 
 import utilo
 
 
 def add_nltk_path(path: str):
     utilo.exists_assert(path)
+    make_private(path)
     seperator = os.pathsep
     before = os.environ.get('NLTK_DATA', '')
     if before:
         before += seperator
     current = f'{before}{path}'
     os.environ['NLTK_DATA'] = current
+
+
+READ_WRITE_EXECUTE = 0o700
+
+
+def make_private(path, mode=READ_WRITE_EXECUTE):
+    """Do not allow other user to change content which is pickeld later.
+
+    NLTK
+        UserWarning: NLTK will not authorize the non-private download directory
+    """
+    root = pathlib.Path(path)
+    for item in root.rglob("*"):
+        if not item.is_dir():
+            continue
+        if item.is_symlink():
+            continue
+        item.chmod(mode)
+    root.chmod(mode)
