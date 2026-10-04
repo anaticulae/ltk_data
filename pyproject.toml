@@ -76,6 +76,7 @@ where = [
 ]
 include = [
     "ltk_data",
+    "ltk_data.data",
     "ltk_data.data.chunkers.maxent_ne_chunker",
     "ltk_data.data.chunkers.maxent_ne_chunker.PY3",
     "ltk_data.data.corpora",

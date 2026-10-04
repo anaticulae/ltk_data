@@ -25,7 +25,21 @@ from ltk_data.path import add_nltk_path  # isort:skip
 from ltk_data.compile import compile_names
 
 # nltk requires env setup before first import
-ltk_data = utilo.join(ROOT, 'ltk_data')
+LTK_DATA = utilo.join(ROOT, 'ltk_data/data')
 
-add_nltk_path(ltk_data)
+add_nltk_path(LTK_DATA)
+
+CORPORA = utilo.join(LTK_DATA, 'corpora')
+
+STOPWORDS = utilo.join(CORPORA, 'stopwords')
+
+NAMES = utilo.join(CORPORA, 'names')
+NAMES_FAMILY = utilo.join(NAMES, 'family')
+NAMES_FEMALE = utilo.join(NAMES, 'female')
+NAMES_MALE = utilo.join(NAMES, 'male')
+
 compile_names(update=False)
+
+NAME_FAMILY = load_pickle(NAMES_FAMILY)
+NAME_FEMALE = load_pickle(NAMES_FEMALE)
+NAME_MALE = load_pickle(NAMES_MALE)

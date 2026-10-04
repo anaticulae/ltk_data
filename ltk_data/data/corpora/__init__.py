@@ -6,16 +6,3 @@
 # use or distribution is an offensive act against international law and may
 # be prosecuted under federal law. Its content is company confidential.
 # =============================================================================
-
-import utilo
-
-import ltk_data
-
-CORPORA = utilo.join(ltk_data.ROOT, 'ltk_data/data/corpora')
-
-NAMES = utilo.join(CORPORA, 'names')
-NAMES_MALE = utilo.join(NAMES, 'male')
-NAMES_FEMALE = utilo.join(NAMES, 'female')
-NAMES_FAMILY = utilo.join(NAMES, 'family')
-
-STOPWORDS = utilo.join(CORPORA, 'stopwords')
