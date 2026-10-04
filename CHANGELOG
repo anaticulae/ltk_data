@@ -1,6 +1,35 @@
 # CHANGELOG
 
 
+## v1.1.3 (2026-10-04)
+
+### Bug Fixes
+
+- **path**: Solve nltk warning
+  ([`75a958f`](https://github.com/anaticulae/ltk_data/commit/75a958ffec253803769a32961240e3ec50a46ba6))
+
+### Chores
+
+- **project**: Reduce project complexity
+  ([`b8ce405`](https://github.com/anaticulae/ltk_data/commit/b8ce405c77b09bde3331873d9289bf7f90976e6a))
+
+- **requirements**: Upgrade pyproject.toml
+  ([`83d1a0b`](https://github.com/anaticulae/ltk_data/commit/83d1a0bfd1d2657cba8784e22fa275a035510bd0))
+
+### Code Style
+
+- **make**: Format code
+  ([`2fafdde`](https://github.com/anaticulae/ltk_data/commit/2fafddec042379e6e47278c11c5066697986a829))
+
+### Refactoring
+
+- **data**: Move to separate folder
+  ([`16e8606`](https://github.com/anaticulae/ltk_data/commit/16e86067756ee6d66cbd16b8c7cd48ded586f545))
+
+- **utilo**: Use utilo code
+  ([`e53f735`](https://github.com/anaticulae/ltk_data/commit/e53f735548c8777db99ac5b56d3f408777238355))
+
+
 ## v1.1.2 (2026-08-06)
 
 ### Bug Fixes
