@@ -1,6 +1,22 @@
 # CHANGELOG
 
 
+## v1.2.0 (2026-10-06)
+
+### Chores
+
+- **github**: Do not run test twice
+  ([`9ca2e4d`](https://github.com/anaticulae/ltk_data/commit/9ca2e4d95b67e4a0d1873328939369b37dd17612))
+
+- **requirements**: Upgrade pyproject.toml
+  ([`8323cac`](https://github.com/anaticulae/ltk_data/commit/8323cac6bda5909e6d423bde31730acc7a5ebb76))
+
+### Features
+
+- **punkt_tab**: Add missing nltk resource
+  ([`c104f5e`](https://github.com/anaticulae/ltk_data/commit/c104f5ed1651df1473087075c2894605f9cb4d5c))
+
+
 ## v1.1.3 (2026-10-04)
 
 ### Bug Fixes
