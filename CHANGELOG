@@ -1,6 +1,19 @@
 # CHANGELOG
 
 
+## v1.2.1 (2026-10-27)
+
+### Chores
+
+- **pyproject**: Release on every commit
+  ([`0ac929b`](https://github.com/anaticulae/ltk_data/commit/0ac929b93f5e5352dce7affdc04302c46769e49c))
+
+### Deps
+
+- **dependabot**: Bump the all-dependencies group across 1 directory with 3 updates
+  ([`e75a502`](https://github.com/anaticulae/ltk_data/commit/e75a502c4ecbd7bfd75236386e0ade88754400e1))
+
+
 ## v1.2.0 (2026-10-06)
 
 ### Chores
