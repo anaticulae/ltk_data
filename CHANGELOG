@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v1.2.2 (2026-10-28)
+
+### Chores
+
+- **docker**: Upgrade docker base images
+  ([`2171204`](https://github.com/anaticulae/ltk_data/commit/2171204933bea84369658194a281e1b6ea374c72))
+
+
 ## v1.2.1 (2026-10-27)
 
 ### Chores
