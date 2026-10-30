@@ -35,9 +35,7 @@ def make_private(path, mode=READ_WRITE_EXECUTE):
     """
     root = pathlib.Path(path)
     for item in root.rglob("*"):
-        if not item.is_dir():
-            continue
-        if item.is_symlink():
+        if not item.is_file():
             continue
         item.chmod(mode)
     root.chmod(mode)
