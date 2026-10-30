@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v1.2.3 (2026-10-30)
+
+### Chores
+
+- **path**: Fix chmod correctly
+  ([`9eb62cd`](https://github.com/anaticulae/ltk_data/commit/9eb62cdbe4ce3463578e87677d72b45b61e9b8b7))
+
+
 ## v1.2.2 (2026-10-28)
 
 ### Chores
