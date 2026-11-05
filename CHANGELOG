@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v1.2.4 (2026-11-05)
+
+### Bug Fixes
+
+- **path**: Adjust path access again
+  ([`d5e62b9`](https://github.com/anaticulae/ltk_data/commit/d5e62b907df980a8c3144be5992f8d32df67969a))
+
+
 ## v1.2.3 (2026-10-30)
 
 ### Chores
