@@ -25,17 +25,26 @@ def add_nltk_path(path: str):
 
 
 READ_WRITE_EXECUTE = 0o700
+READ_WRITE = 0o600
 
 
-def make_private(path, mode=READ_WRITE_EXECUTE):
+def make_private(path):
     """Do not allow other user to change content which is pickeld later.
 
     NLTK
         UserWarning: NLTK will not authorize the non-private download directory
+
+    In short, ~0o022 means preserve all existing permissions except
+    group-write and others-write.
+
+    Original:  0o777
+    Mask:     ~0o022
+    Result:    0o755
     """
     root = pathlib.Path(path)
     for item in root.rglob("*"):
-        if not item.is_file():
+        if item.is_file():
+            item.chmod(READ_WRITE)
             continue
-        item.chmod(mode)
-    root.chmod(mode)
+        os.chmod(path, os.stat(path).st_mode & ~0o022)
+    os.chmod(path, os.stat(path).st_mode & ~0o022)
