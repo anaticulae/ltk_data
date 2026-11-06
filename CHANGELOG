@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v1.2.5 (2026-11-06)
+
+### Bug Fixes
+
+- **path**: Run path adjustment
+  ([`29efec9`](https://github.com/anaticulae/ltk_data/commit/29efec9ff466b3a302bb2d3dd7822d28faedac0c))
+
+
 ## v1.2.4 (2026-11-05)
 
 ### Bug Fixes
