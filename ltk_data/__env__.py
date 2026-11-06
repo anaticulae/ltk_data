@@ -24,7 +24,7 @@ def make_private(path):
     """
     root = pathlib.Path(path)
     for item in root.rglob("*"):
-        utilo.debug(item)
+        utilo.log(item)
         os.chmod(item, os.stat(item).st_mode & ~0o022)
 
 
