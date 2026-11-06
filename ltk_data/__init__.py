@@ -12,6 +12,8 @@ import os
 
 import utilo
 
+import ltk_data.__env__
+
 __version__ = importlib.metadata.version('ltk_data')
 
 ROOT = os.path.abspath(utilo.join(os.path.dirname(__file__), '..'))
@@ -22,6 +24,8 @@ from ltk_data.utils import pickler  # isort:skip
 from ltk_data.utils import load_pickle  # isort:skip
 from ltk_data.utils import picklepath  # isort:skip
 from ltk_data.path import add_nltk_path  # isort:skip
+from ltk_data.__env__ import make_private
+from ltk_data.__env__ import update_env
 from ltk_data.compile import compile_names
 
 # nltk requires env setup before first import
