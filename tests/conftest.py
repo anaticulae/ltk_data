@@ -7,8 +7,7 @@
 # be prosecuted under federal law. Its content is company confidential.
 # =============================================================================
 
-# import utilo
+# import ltk_data to set nltk path
+import ltk_data  # pylint:disable=unused-import
 
 pytest_plugins = ['pytester', 'xdist']  # pylint: disable=invalid-name
-
-# utilo.run('python -mbuild', cwd=utilo.baw_root(__file__))

@@ -28,16 +28,9 @@ jobs:
           fetch-depth: 15
       - name: run fasttest
         run: make docker-fasttest
-  longtest:
-    runs-on: ubuntu-24.04
-    needs: fasttest
-    steps:
-      - uses: actions/checkout@v7
-      - name: run longtest
-        run: make docker-longtest
   alltest:
     runs-on: ubuntu-24.04
-    needs: longtest
+    needs: fasttest
     steps:
       - uses: actions/checkout@v7
         with:
