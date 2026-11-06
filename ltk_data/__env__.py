@@ -3,9 +3,10 @@ import pathlib
 
 import utilo
 
-ROOT = os.path.abspath(utilo.join(os.path.dirname(__file__), '..'))
-# nltk requires env setup before first import
-LTK_DATA = utilo.join(ROOT, 'ltk_data/data')
+import ltk_data
+
+ROOT = pathlib.Path(ltk_data.__file__).parent
+DATA = utilo.join(ROOT, 'data')
 
 
 def make_private(path):
@@ -40,5 +41,5 @@ def update_env(path):
     os.environ['NLTK_DATA'] = current
 
 
-make_private(LTK_DATA)
-update_env(LTK_DATA)
+make_private(ROOT)
+update_env(DATA)
