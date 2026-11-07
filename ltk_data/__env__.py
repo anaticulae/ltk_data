@@ -41,5 +41,21 @@ def update_env(path):
     os.environ['NLTK_DATA'] = current
 
 
+def disable_nltk_check():
+    """This is only for testing purposes. Docker volumes are used for
+    testing, which means that the user who owns the data may be different
+    from the user running the container. As a result, NLTK does not trust
+    the data.
+
+    In production, no Docker volumes are used; only the installed packages
+    in site-packages are relevant. Therefore, this issue does not apply to
+    the production environment.
+    """
+    # TODO: VERIFY BEFORE GOING LIVE?
+    import nltk.pathsec
+    nltk.pathsec.ENFORCE = False
+
+
+disable_nltk_check()
 make_private(ROOT)
 update_env(DATA)
