@@ -1,6 +1,27 @@
 # CHANGELOG
 
 
+## v1.2.6 (2026-11-07)
+
+### Bug Fixes
+
+- **nltk**: Disable security check
+  ([`d7dbd01`](https://github.com/anaticulae/ltk_data/commit/d7dbd01c3f89bc18331d7fa83adca7df59bb08ab))
+
+- **path**: Run path adjustment
+  ([`2f0013e`](https://github.com/anaticulae/ltk_data/commit/2f0013ef0602956110733ab331d41dc7b99a54e0))
+
+### Chores
+
+- **github**: Disable unused long test
+  ([`1e3ecd9`](https://github.com/anaticulae/ltk_data/commit/1e3ecd96cd658b126a45a3a2cffcbef32c367943))
+
+### Testing
+
+- **corpora**: Verify that corpus is loaded correctly
+  ([`5f7daa0`](https://github.com/anaticulae/ltk_data/commit/5f7daa0f4ea12454b25d538d43514faf2f376c90))
+
+
 ## v1.2.5 (2026-11-06)
 
 ### Bug Fixes
