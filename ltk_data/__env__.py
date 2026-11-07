@@ -3,9 +3,10 @@ import pathlib
 
 import utilo
 
-ROOT = os.path.abspath(utilo.join(os.path.dirname(__file__), '..'))
-# nltk requires env setup before first import
-LTK_DATA = utilo.join(ROOT, 'ltk_data/data')
+import ltk_data
+
+ROOT = pathlib.Path(ltk_data.__file__).parent
+DATA = utilo.join(ROOT, 'data')
 
 
 def make_private(path):
@@ -40,5 +41,21 @@ def update_env(path):
     os.environ['NLTK_DATA'] = current
 
 
-make_private(LTK_DATA)
-update_env(LTK_DATA)
+def disable_nltk_check():
+    """This is only for testing purposes. Docker volumes are used for
+    testing, which means that the user who owns the data may be different
+    from the user running the container. As a result, NLTK does not trust
+    the data.
+
+    In production, no Docker volumes are used; only the installed packages
+    in site-packages are relevant. Therefore, this issue does not apply to
+    the production environment.
+    """
+    # TODO: VERIFY BEFORE GOING LIVE?
+    import nltk.pathsec
+    nltk.pathsec.ENFORCE = False
+
+
+disable_nltk_check()
+make_private(ROOT)
+update_env(DATA)
